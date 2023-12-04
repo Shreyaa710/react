@@ -1,5 +1,14 @@
+import Chai from "./chai";
+
 function App() {
-  return <h1>chai or react with vite</h1>;
+  const username = "chai or code";
+
+  return (
+    <>
+      <Chai />
+      <h1>chai is ready {username}</h1>
+    </>
+  );
 }
 
 export default App;
