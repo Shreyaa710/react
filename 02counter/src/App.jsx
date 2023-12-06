@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
+  // hooks : this will help in pdating value in UI
   let [counter, setCounter] = useState(15);
 
   // let counter = 5;
@@ -11,11 +12,13 @@ function App() {
   const addValue = () => {
     console.log("clicked", counter);
     // counter = counter + 1;
-    setCounter(counter + 1);
+    if (counter == 20) setCounter(20);
+    else setCounter(counter + 1);
   };
 
   const removeValue = () => {
-    setCounter(counter - 1);
+    if (counter == 0) setCounter(0);
+    else setCounter(counter - 1);
   };
 
   return (
