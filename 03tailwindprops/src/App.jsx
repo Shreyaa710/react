@@ -17,8 +17,11 @@ function App() {
       <h1 className="bg-green-400 text-black p-4 rounded-xl mb-4">
         tailwind test
       </h1>
-      <Card username="chai aur code" someObj={myObj} />
-      <Card />
+      <Card
+        username="chai aur code"
+        btnText="click me" /*someObj={myObj} we can pass array object or anything as variable*/
+      />
+      <Card username="shreya aur code" />
     </>
   );
 }
